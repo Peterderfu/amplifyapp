@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
-import { API } from "aws-amplify";
+// import { API } from "aws-amplify";
+import { generateClient } from 'aws-amplify/api';
 import {
   Button,
   Flex,
@@ -16,7 +17,7 @@ import {
   createTodo as createTodoMutation,
   deleteTodo as deleteTodoMutation,
 } from "./graphql/mutations";
-
+const client = generateClient();
 const App = ({ signOut }) => {
   const [todos, setTodos] = useState([]);
 
@@ -25,7 +26,7 @@ const App = ({ signOut }) => {
   }, []);
 
   async function fetchTodos() {
-    const apiData = await API.graphql({ query: listTodos });
+    const apiData = await client.graphql({ query: listTodos });
     const todosFromAPI = apiData.data.listTodos.items;
     setTodos(todosFromAPI);
   }
@@ -37,7 +38,7 @@ const App = ({ signOut }) => {
       name: form.get("name"),
       description: form.get("description"),
     };
-    await API.graphql({
+    await client.graphql({
       query: createTodoMutation,
       variables: { input: data },
     });
@@ -48,7 +49,7 @@ const App = ({ signOut }) => {
   async function deleteTodo({ id }) {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
-    await API.graphql({
+    await client.graphql({
       query: deleteTodoMutation,
       variables: { input: { id } },
     });
