@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
-// import { API } from "aws-amplify";
 import { generateClient } from 'aws-amplify/api';
 import {
   Button,
@@ -17,7 +16,7 @@ import {
   createTodo as createTodoMutation,
   deleteTodo as deleteTodoMutation,
 } from "./graphql/mutations";
-const client = generateClient();
+
 const App = ({ signOut }) => {
   const [todos, setTodos] = useState([]);
 
