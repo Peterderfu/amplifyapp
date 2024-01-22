@@ -16,7 +16,7 @@ import {
   createTodo as createTodoMutation,
   deleteTodo as deleteTodoMutation,
 } from "./graphql/mutations";
-
+const client = generateClient();
 const App = ({ signOut }) => {
   const [todos, setTodos] = useState([]);
 
