@@ -122,7 +122,12 @@ export default function TodoCreateForm(props) {
       {...rest}
     >
       <TextField
-        label="Name"
+        label={
+          <span style={{ display: "inline-flex" }}>
+            <span>Name</span>
+            <span style={{ color: "red" }}>*</span>
+          </span>
+        }
         isRequired={true}
         isReadOnly={false}
         value={name}
