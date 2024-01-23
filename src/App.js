@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Amplify } from 'aws-amplify';
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
+import React, { useState, useEffect } from "react";
+import { Amplify } from 'aws-amplify';
 import { generateClient } from 'aws-amplify/api';
+import config from './amplifyconfiguration.json';
 import {
   Button,
   Flex,
@@ -17,12 +18,12 @@ import {
   createTodo as createTodoMutation,
   deleteTodo as deleteTodoMutation,
 } from "./graphql/mutations";
-import config from './amplifyconfiguration.json';
+
 
 Amplify.configure(config);
 const client = generateClient();
-// const App = ({ signOut }) => {
-  function App ({ signOut }) {
+const App = ({ signOut }) => {
+  // function App ({ signOut }) {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
