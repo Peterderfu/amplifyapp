@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Badge, Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function ItemCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,16 +24,11 @@ export default function ItemCard(props) {
       {...getOverrideProps(overrides, "ItemCard")}
       {...rest}
     >
-      <Badge
+      <Flex
         width="unset"
         height="unset"
-        gap="0"
-        shrink="0"
-        size="small"
-        variation="success"
-        children="New!"
         {...getOverrideProps(overrides, "Badge")}
-      ></Badge>
+      ></Flex>
       <Flex
         gap="0"
         direction="row"

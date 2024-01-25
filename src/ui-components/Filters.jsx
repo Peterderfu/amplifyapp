@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, SelectField } from "@aws-amplify/ui-react";
+import { Flex } from "@aws-amplify/ui-react";
 export default function Filters(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,40 +24,21 @@ export default function Filters(props) {
       {...getOverrideProps(overrides, "Filters")}
       {...rest}
     >
-      <SelectField
+      <Flex
         width="240px"
         height="unset"
-        label="Status"
-        placeholder="All"
-        shrink="0"
-        size="small"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        {...getOverrideProps(overrides, "SelectField38963527")}
-      ></SelectField>
-      <SelectField
+        {...getOverrideProps(overrides, "SelectField40472593")}
+      ></Flex>
+      <Flex
         width="240px"
         height="unset"
-        label="Channel"
-        placeholder="All"
-        shrink="0"
-        size="small"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        {...getOverrideProps(overrides, "SelectField38963544")}
-      ></SelectField>
-      <Button
+        {...getOverrideProps(overrides, "SelectField40472594")}
+      ></Flex>
+      <Flex
         width="unset"
         height="unset"
-        shrink="0"
-        size="small"
-        isDisabled={false}
-        variation="default"
-        children="Clear"
         {...getOverrideProps(overrides, "Button")}
-      ></Button>
+      ></Flex>
     </Flex>
   );
 }

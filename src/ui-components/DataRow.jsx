@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function DataRow(props) {
   const { overrides, ...rest } = props;
   return (
@@ -67,16 +67,11 @@ export default function DataRow(props) {
         children="Value"
         {...getOverrideProps(overrides, "value")}
       ></Text>
-      <Button
+      <Flex
         width="unset"
         height="unset"
-        shrink="0"
-        size="small"
-        isDisabled={false}
-        variation="link"
-        children="Edit"
         {...getOverrideProps(overrides, "Button")}
-      ></Button>
+      ></Flex>
     </Flex>
   );
 }

@@ -7,16 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Badge,
-  Divider,
-  Flex,
-  Icon,
-  Image,
-  Rating,
-  Text,
-  View,
-} from "@aws-amplify/ui-react";
+import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ReviewCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -175,14 +166,11 @@ export default function ReviewCard(props) {
             {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
           ></Text>
         </Flex>
-        <Divider
+        <View
           width="40px"
           height="1px"
-          shrink="0"
-          size="small"
-          orientation="horizontal"
           {...getOverrideProps(overrides, "Divider")}
-        ></Divider>
+        ></View>
         <Flex
           gap="8px"
           direction="column"
@@ -219,7 +207,7 @@ export default function ReviewCard(props) {
             children="Information about this product."
             {...getOverrideProps(
               overrides,
-              "Information about this product.29766836"
+              "Information about this product.40472157"
             )}
           ></Text>
           <Text
@@ -245,19 +233,15 @@ export default function ReviewCard(props) {
             children="Information about this product."
             {...getOverrideProps(
               overrides,
-              "Information about this product.29766837"
+              "Information about this product.40472158"
             )}
           ></Text>
         </Flex>
-        <Badge
+        <Flex
           width="unset"
           height="unset"
-          shrink="0"
-          size="small"
-          variation="default"
-          children="New!"
           {...getOverrideProps(overrides, "Badge")}
-        ></Badge>
+        ></Flex>
         <Flex
           gap="16px"
           direction="row"
@@ -281,15 +265,13 @@ export default function ReviewCard(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Rating29766840")}
+            {...getOverrideProps(overrides, "Rating40472161")}
           >
-            <Rating
+            <Flex
               width="unset"
               height="unset"
-              shrink="0"
-              size="large"
-              {...getOverrideProps(overrides, "Rating29766841")}
-            ></Rating>
+              {...getOverrideProps(overrides, "Rating40472162")}
+            ></Flex>
             <Text
               fontFamily="Inter"
               fontSize="16px"

@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Badge, Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function Stat(props) {
   const { overrides, ...rest } = props;
   return (
@@ -79,15 +79,11 @@ export default function Stat(props) {
           children="8,260"
           {...getOverrideProps(overrides, "8,260")}
         ></Text>
-        <Badge
+        <Flex
           width="unset"
           height="unset"
-          shrink="0"
-          size="default"
-          variation="success"
-          children="+17%"
           {...getOverrideProps(overrides, "Badge")}
-        ></Badge>
+        ></Flex>
       </Flex>
     </Flex>
   );

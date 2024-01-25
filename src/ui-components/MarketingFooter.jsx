@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Divider, Flex, Text, TextField } from "@aws-amplify/ui-react";
+import { Flex, Text, View } from "@aws-amplify/ui-react";
 import LogoWithText from "./LogoWithText";
 export default function MarketingFooter(props) {
   const { overrides, ...rest } = props;
@@ -105,38 +105,23 @@ export default function MarketingFooter(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Frame 435")}
         >
-          <TextField
+          <Flex
             width="300px"
             height="unset"
-            placeholder="Your email"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            labelHidden={true}
-            variation="default"
             {...getOverrideProps(overrides, "TextField")}
-          ></TextField>
-          <Button
+          ></Flex>
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            variation="default"
-            children="Subscribe"
             {...getOverrideProps(overrides, "Button")}
-          ></Button>
+          ></Flex>
         </Flex>
       </Flex>
-      <Divider
+      <View
         width="unset"
         height="1px"
-        shrink="0"
-        alignSelf="stretch"
-        size="small"
-        orientation="horizontal"
-        {...getOverrideProps(overrides, "Divider39413816")}
-      ></Divider>
+        {...getOverrideProps(overrides, "Divider40472328")}
+      ></View>
       <Flex
         gap="24px"
         direction="row"
@@ -148,7 +133,7 @@ export default function MarketingFooter(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 40529766988")}
+        {...getOverrideProps(overrides, "Frame 40540472329")}
       >
         <Flex
           gap="8px"
@@ -406,7 +391,7 @@ export default function MarketingFooter(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 40539413972")}
+          {...getOverrideProps(overrides, "Frame 40540472342")}
         >
           <Text
             fontFamily="Inter"
@@ -498,15 +483,11 @@ export default function MarketingFooter(props) {
           ></Text>
         </Flex>
       </Flex>
-      <Divider
+      <View
         width="unset"
         height="1px"
-        shrink="0"
-        alignSelf="stretch"
-        size="small"
-        orientation="horizontal"
-        {...getOverrideProps(overrides, "Divider39413869")}
-      ></Divider>
+        {...getOverrideProps(overrides, "Divider40472347")}
+      ></View>
       <Flex
         gap="0"
         direction="row"

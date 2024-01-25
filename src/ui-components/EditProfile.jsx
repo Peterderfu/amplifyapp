@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import MyIcon from "./MyIcon";
-import { Button, Flex, Image, Text, TextField } from "@aws-amplify/ui-react";
+import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function EditProfile(props) {
   const { overrides, ...rest } = props;
   return (
@@ -49,7 +49,7 @@ export default function EditProfile(props) {
           alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Edit Profile29766913")}
+          {...getOverrideProps(overrides, "Edit Profile40472228")}
         >
           <MyIcon
             width="24px"
@@ -84,7 +84,7 @@ export default function EditProfile(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Edit Profile"
-            {...getOverrideProps(overrides, "Edit Profile29766916")}
+            {...getOverrideProps(overrides, "Edit Profile40472230")}
           ></Text>
         </Flex>
         <Flex
@@ -150,56 +150,27 @@ export default function EditProfile(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Forms")}
         >
-          <TextField
+          <Flex
             width="unset"
             height="unset"
-            label="Full name"
-            placeholder="John Doe"
-            shrink="0"
-            alignSelf="stretch"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            {...getOverrideProps(overrides, "TextField29766922")}
-          ></TextField>
-          <TextField
+            {...getOverrideProps(overrides, "TextField40472235")}
+          ></Flex>
+          <Flex
             width="unset"
             height="unset"
-            label="Location"
-            placeholder="Seattle, WA"
-            shrink="0"
-            alignSelf="stretch"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            {...getOverrideProps(overrides, "TextField29766923")}
-          ></TextField>
-          <TextField
+            {...getOverrideProps(overrides, "TextField40472236")}
+          ></Flex>
+          <Flex
             width="unset"
             height="unset"
-            label="Email"
-            placeholder="john.doe@awsamplify.com"
-            shrink="0"
-            alignSelf="stretch"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            {...getOverrideProps(overrides, "TextField29766924")}
-          ></TextField>
+            {...getOverrideProps(overrides, "TextField40472237")}
+          ></Flex>
         </Flex>
-        <Button
+        <Flex
           width="unset"
           height="unset"
-          shrink="0"
-          size="default"
-          isDisabled={false}
-          variation="primary"
-          children="Save"
           {...getOverrideProps(overrides, "Button")}
-        ></Button>
+        ></Flex>
       </Flex>
     </Flex>
   );

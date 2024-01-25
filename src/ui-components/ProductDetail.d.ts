@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, DividerProps, FlexProps, ImageProps, RatingProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -22,36 +22,36 @@ export declare type ProductDetailOverridesProps = {
     "Frame 401"?: PrimitiveOverrideProps<FlexProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
     "Frame 6"?: PrimitiveOverrideProps<FlexProps>;
-    "Frame 729766954"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 740472260"?: PrimitiveOverrideProps<FlexProps>;
     "Basic Tee 6-Pack"?: PrimitiveOverrideProps<TextProps>;
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat."?: PrimitiveOverrideProps<TextProps>;
-    Divider29766957?: PrimitiveOverrideProps<DividerProps>;
-    "Frame 729766958"?: PrimitiveOverrideProps<FlexProps>;
+    Divider40472263?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 740472264"?: PrimitiveOverrideProps<FlexProps>;
     Highlights?: PrimitiveOverrideProps<TextProps>;
     "Hand cut and sewn locally Dyed with our proprietary colors Pre-washed & pre-shrunk Ultra-soft 100% cotton"?: PrimitiveOverrideProps<TextProps>;
-    Divider29766961?: PrimitiveOverrideProps<DividerProps>;
-    "Frame 729766962"?: PrimitiveOverrideProps<FlexProps>;
+    Divider40472267?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 740472268"?: PrimitiveOverrideProps<FlexProps>;
     Details?: PrimitiveOverrideProps<TextProps>;
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor."?: PrimitiveOverrideProps<TextProps>;
     "Frame 402"?: PrimitiveOverrideProps<FlexProps>;
     $192?: PrimitiveOverrideProps<TextProps>;
-    "Frame 2729766968"?: PrimitiveOverrideProps<FlexProps>;
-    Rating?: PrimitiveOverrideProps<RatingProps>;
+    "Frame 2740472273"?: PrimitiveOverrideProps<FlexProps>;
+    Rating?: PrimitiveOverrideProps<FlexProps>;
     "12 reviews"?: PrimitiveOverrideProps<TextProps>;
-    "Frame 2729766971"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 2740472276"?: PrimitiveOverrideProps<FlexProps>;
     "Size Guide"?: PrimitiveOverrideProps<TextProps>;
     Size?: PrimitiveOverrideProps<TextProps>;
-    "Frame 2829766973"?: PrimitiveOverrideProps<FlexProps>;
-    Button29766974?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766975?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766976?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766977?: PrimitiveOverrideProps<ButtonProps>;
-    "Frame 2829766978"?: PrimitiveOverrideProps<FlexProps>;
-    Button29766979?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766980?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766981?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766982?: PrimitiveOverrideProps<ButtonProps>;
-    Button29766972?: PrimitiveOverrideProps<ButtonProps>;
+    "Frame 2840472279"?: PrimitiveOverrideProps<FlexProps>;
+    Button40472280?: PrimitiveOverrideProps<FlexProps>;
+    Button40472281?: PrimitiveOverrideProps<FlexProps>;
+    Button40472282?: PrimitiveOverrideProps<FlexProps>;
+    Button40472283?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 2840472284"?: PrimitiveOverrideProps<FlexProps>;
+    Button40472285?: PrimitiveOverrideProps<FlexProps>;
+    Button40472286?: PrimitiveOverrideProps<FlexProps>;
+    Button40472287?: PrimitiveOverrideProps<FlexProps>;
+    Button40472288?: PrimitiveOverrideProps<FlexProps>;
+    Button40472289?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type ProductDetailProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: ProductDetailOverridesProps | undefined | null;

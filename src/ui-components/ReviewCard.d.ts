@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { BadgeProps, DividerProps, FlexProps, IconProps, ImageProps, RatingProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -27,14 +27,14 @@ export declare type ReviewCardOverridesProps = {
     Icon?: PrimitiveOverrideProps<ViewProps>;
     Vector?: PrimitiveOverrideProps<IconProps>;
     "Classic Long Sleeve T-Shirt"?: PrimitiveOverrideProps<TextProps>;
-    Divider?: PrimitiveOverrideProps<DividerProps>;
+    Divider?: PrimitiveOverrideProps<ViewProps>;
     Features?: PrimitiveOverrideProps<FlexProps>;
-    "Information about this product.29766836"?: PrimitiveOverrideProps<TextProps>;
-    "Information about this product.29766837"?: PrimitiveOverrideProps<TextProps>;
-    Badge?: PrimitiveOverrideProps<BadgeProps>;
+    "Information about this product.40472157"?: PrimitiveOverrideProps<TextProps>;
+    "Information about this product.40472158"?: PrimitiveOverrideProps<TextProps>;
+    Badge?: PrimitiveOverrideProps<FlexProps>;
     "Bottom Row"?: PrimitiveOverrideProps<FlexProps>;
-    Rating29766840?: PrimitiveOverrideProps<FlexProps>;
-    Rating29766841?: PrimitiveOverrideProps<RatingProps>;
+    Rating40472161?: PrimitiveOverrideProps<FlexProps>;
+    Rating40472162?: PrimitiveOverrideProps<FlexProps>;
     Reviews?: PrimitiveOverrideProps<TextProps>;
     "$99/Night"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, ImageProps, RatingProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -24,9 +24,9 @@ export declare type ActionCardOverridesProps = {
     "Main Text"?: PrimitiveOverrideProps<FlexProps>;
     "Classic Long Sleeve T-Shirt"?: PrimitiveOverrideProps<TextProps>;
     "Information about this product"?: PrimitiveOverrideProps<TextProps>;
-    Rating?: PrimitiveOverrideProps<RatingProps>;
+    Rating?: PrimitiveOverrideProps<FlexProps>;
     "$99 USD"?: PrimitiveOverrideProps<TextProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type ActionCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: ActionCardOverridesProps | undefined | null;

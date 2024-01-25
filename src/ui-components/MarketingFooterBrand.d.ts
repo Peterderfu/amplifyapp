@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 import { LogoWithTextProps } from "./LogoWithText";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -25,9 +25,9 @@ export declare type MarketingFooterBrandOverridesProps = {
     "Sign up for our newsletter"?: PrimitiveOverrideProps<TextProps>;
     "No spam. We promise."?: PrimitiveOverrideProps<TextProps>;
     "Frame 435"?: PrimitiveOverrideProps<FlexProps>;
-    TextField?: PrimitiveOverrideProps<TextFieldProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
-    "Frame 40539414056"?: PrimitiveOverrideProps<FlexProps>;
+    TextField?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 40540472299"?: PrimitiveOverrideProps<FlexProps>;
     "Frame 403"?: PrimitiveOverrideProps<FlexProps>;
     Products?: PrimitiveOverrideProps<TextProps>;
     Libraries?: PrimitiveOverrideProps<TextProps>;
@@ -40,7 +40,7 @@ export declare type MarketingFooterBrandOverridesProps = {
     Learn?: PrimitiveOverrideProps<TextProps>;
     Examples?: PrimitiveOverrideProps<TextProps>;
     Changelog?: PrimitiveOverrideProps<TextProps>;
-    "Frame 40539414069"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 40540472312"?: PrimitiveOverrideProps<FlexProps>;
     Company?: PrimitiveOverrideProps<TextProps>;
     "About us"?: PrimitiveOverrideProps<TextProps>;
     Contact?: PrimitiveOverrideProps<TextProps>;

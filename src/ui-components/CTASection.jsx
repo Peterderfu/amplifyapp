@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, Text, TextField } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 export default function CTASection(props) {
   const { overrides, ...rest } = props;
   return (
@@ -132,27 +132,16 @@ export default function CTASection(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Form")}
         >
-          <TextField
+          <Flex
             width="300px"
             height="unset"
-            placeholder="Email address"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            labelHidden={true}
-            variation="default"
             {...getOverrideProps(overrides, "TextField")}
-          ></TextField>
-          <Button
+          ></Flex>
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            variation="primary"
-            children="Sign me up"
             {...getOverrideProps(overrides, "Button")}
-          ></Button>
+          ></Flex>
         </Flex>
       </Flex>
     </Flex>

@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, Text } from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function MarketingPricing(props) {
   const { overrides, ...rest } = props;
@@ -133,7 +133,7 @@ export default function MarketingPricing(props) {
           borderRadius="8px"
           padding="32px 32px 32px 32px"
           backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Frame 39029766683")}
+          {...getOverrideProps(overrides, "Frame 39040472020")}
         >
           <Flex
             gap="8px"
@@ -145,7 +145,7 @@ export default function MarketingPricing(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 42939393278")}
+            {...getOverrideProps(overrides, "Frame 42940472021")}
           >
             <Text
               fontFamily="Inter"
@@ -222,7 +222,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13829766688")}
+            {...getOverrideProps(overrides, "Frame 13840472025")}
           >
             <Flex
               gap="0"
@@ -236,7 +236,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393324")}
+              {...getOverrideProps(overrides, "Frame 43040472026")}
             >
               <MyIcon
                 width="24px"
@@ -250,7 +250,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393299")}
+                {...getOverrideProps(overrides, "MyIcon40472027")}
               ></MyIcon>
             </Flex>
             <Text
@@ -277,7 +277,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.29766691"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472028"
               )}
             ></Text>
           </Flex>
@@ -292,7 +292,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13929766692")}
+            {...getOverrideProps(overrides, "Frame 13940472029")}
           >
             <Flex
               gap="0"
@@ -306,7 +306,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43139393330")}
+              {...getOverrideProps(overrides, "Frame 43140472030")}
             >
               <MyIcon
                 width="24px"
@@ -320,7 +320,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393331")}
+                {...getOverrideProps(overrides, "MyIcon40472031")}
               ></MyIcon>
             </Flex>
             <Text
@@ -347,7 +347,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.29766695"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472032"
               )}
             ></Text>
           </Flex>
@@ -362,7 +362,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13729766696")}
+            {...getOverrideProps(overrides, "Frame 13740472033")}
           >
             <Flex
               gap="0"
@@ -376,7 +376,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393348")}
+              {...getOverrideProps(overrides, "Frame 43040472034")}
             >
               <MyIcon
                 width="24px"
@@ -390,7 +390,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393349")}
+                {...getOverrideProps(overrides, "MyIcon40472035")}
               ></MyIcon>
             </Flex>
             <Text
@@ -417,21 +417,15 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.29766699"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472036"
               )}
             ></Text>
           </Flex>
-          <Button
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            alignSelf="stretch"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Get started"
-            {...getOverrideProps(overrides, "Button29766686")}
-          ></Button>
+            {...getOverrideProps(overrides, "Button40472037")}
+          ></Flex>
         </Flex>
         <Flex
           gap="24px"
@@ -448,7 +442,7 @@ export default function MarketingPricing(props) {
           borderRadius="8px"
           padding="32px 32px 32px 32px"
           backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Frame 39039393391")}
+          {...getOverrideProps(overrides, "Frame 39040472038")}
         >
           <Flex
             gap="8px"
@@ -460,7 +454,7 @@ export default function MarketingPricing(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 42939393392")}
+            {...getOverrideProps(overrides, "Frame 42940472039")}
           >
             <Text
               fontFamily="Inter"
@@ -523,7 +517,7 @@ export default function MarketingPricing(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Billed annually"
-              {...getOverrideProps(overrides, "Billed annually39393395")}
+              {...getOverrideProps(overrides, "Billed annually40472042")}
             ></Text>
           </Flex>
           <Flex
@@ -537,7 +531,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13839393396")}
+            {...getOverrideProps(overrides, "Frame 13840472043")}
           >
             <Flex
               gap="0"
@@ -551,7 +545,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393397")}
+              {...getOverrideProps(overrides, "Frame 43040472044")}
             >
               <MyIcon
                 width="24px"
@@ -565,7 +559,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393398")}
+                {...getOverrideProps(overrides, "MyIcon40472045")}
               ></MyIcon>
             </Flex>
             <Text
@@ -592,7 +586,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393399"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472046"
               )}
             ></Text>
           </Flex>
@@ -607,7 +601,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13939393400")}
+            {...getOverrideProps(overrides, "Frame 13940472047")}
           >
             <Flex
               gap="0"
@@ -621,7 +615,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43139393401")}
+              {...getOverrideProps(overrides, "Frame 43140472048")}
             >
               <MyIcon
                 width="24px"
@@ -635,7 +629,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393402")}
+                {...getOverrideProps(overrides, "MyIcon40472049")}
               ></MyIcon>
             </Flex>
             <Text
@@ -662,7 +656,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393403"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472050"
               )}
             ></Text>
           </Flex>
@@ -677,7 +671,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13739393404")}
+            {...getOverrideProps(overrides, "Frame 13740472051")}
           >
             <Flex
               gap="0"
@@ -691,7 +685,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393405")}
+              {...getOverrideProps(overrides, "Frame 43040472052")}
             >
               <MyIcon
                 width="24px"
@@ -705,7 +699,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393406")}
+                {...getOverrideProps(overrides, "MyIcon40472053")}
               ></MyIcon>
             </Flex>
             <Text
@@ -732,21 +726,15 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393407"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472054"
               )}
             ></Text>
           </Flex>
-          <Button
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            alignSelf="stretch"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Get started"
-            {...getOverrideProps(overrides, "Button39393408")}
-          ></Button>
+            {...getOverrideProps(overrides, "Button40472055")}
+          ></Flex>
         </Flex>
         <Flex
           gap="24px"
@@ -775,7 +763,7 @@ export default function MarketingPricing(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 42939393608")}
+            {...getOverrideProps(overrides, "Frame 42940472057")}
           >
             <Text
               fontFamily="Inter"
@@ -838,7 +826,7 @@ export default function MarketingPricing(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Billed annually"
-              {...getOverrideProps(overrides, "Billed annually39393611")}
+              {...getOverrideProps(overrides, "Billed annually40472060")}
             ></Text>
           </Flex>
           <Flex
@@ -852,7 +840,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13839393612")}
+            {...getOverrideProps(overrides, "Frame 13840472061")}
           >
             <Flex
               gap="0"
@@ -866,7 +854,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393613")}
+              {...getOverrideProps(overrides, "Frame 43040472062")}
             >
               <MyIcon
                 width="24px"
@@ -880,7 +868,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393614")}
+                {...getOverrideProps(overrides, "MyIcon40472063")}
               ></MyIcon>
             </Flex>
             <Text
@@ -907,7 +895,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393615"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472064"
               )}
             ></Text>
           </Flex>
@@ -922,7 +910,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13939393616")}
+            {...getOverrideProps(overrides, "Frame 13940472065")}
           >
             <Flex
               gap="0"
@@ -936,7 +924,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43139393617")}
+              {...getOverrideProps(overrides, "Frame 43140472066")}
             >
               <MyIcon
                 width="24px"
@@ -950,7 +938,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393618")}
+                {...getOverrideProps(overrides, "MyIcon40472067")}
               ></MyIcon>
             </Flex>
             <Text
@@ -977,7 +965,7 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393619"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472068"
               )}
             ></Text>
           </Flex>
@@ -992,7 +980,7 @@ export default function MarketingPricing(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Frame 13739393620")}
+            {...getOverrideProps(overrides, "Frame 13740472069")}
           >
             <Flex
               gap="0"
@@ -1006,7 +994,7 @@ export default function MarketingPricing(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039393621")}
+              {...getOverrideProps(overrides, "Frame 43040472070")}
             >
               <MyIcon
                 width="24px"
@@ -1020,7 +1008,7 @@ export default function MarketingPricing(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39393622")}
+                {...getOverrideProps(overrides, "MyIcon40472071")}
               ></MyIcon>
             </Flex>
             <Text
@@ -1047,21 +1035,15 @@ export default function MarketingPricing(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.39393623"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.40472072"
               )}
             ></Text>
           </Flex>
-          <Button
+          <Flex
             width="unset"
             height="unset"
-            shrink="0"
-            alignSelf="stretch"
-            size="large"
-            isDisabled={false}
-            variation="primary"
-            children="Get started"
-            {...getOverrideProps(overrides, "Button39393624")}
-          ></Button>
+            {...getOverrideProps(overrides, "Button40472073")}
+          ></Flex>
         </Flex>
       </Flex>
     </Flex>

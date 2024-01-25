@@ -37,7 +37,7 @@ export default function SideBar(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32139493355")}
+        {...getOverrideProps(overrides, "Frame 32140472472")}
       >
         <Flex
           gap="32px"
@@ -52,7 +52,7 @@ export default function SideBar(props) {
           alignSelf="stretch"
           position="relative"
           padding="0px 32px 0px 32px"
-          {...getOverrideProps(overrides, "Frame 32139493356")}
+          {...getOverrideProps(overrides, "Frame 32140472473")}
         >
           <Flex
             gap="16px"
@@ -90,7 +90,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493360")}
+                {...getOverrideProps(overrides, "icon40472476")}
               >
                 <MyIcon
                   width="18px"
@@ -104,7 +104,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="home"
-                  {...getOverrideProps(overrides, "MyIcon39493361")}
+                  {...getOverrideProps(overrides, "MyIcon40472477")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -127,7 +127,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Home"
-                {...getOverrideProps(overrides, "label39493362")}
+                {...getOverrideProps(overrides, "label40472478")}
               ></Text>
             </Flex>
           </Flex>
@@ -141,7 +141,7 @@ export default function SideBar(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Section39493363")}
+            {...getOverrideProps(overrides, "Section40472479")}
           >
             <Text
               fontFamily="Inter"
@@ -162,7 +162,7 @@ export default function SideBar(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Manage"
-              {...getOverrideProps(overrides, "label39493364")}
+              {...getOverrideProps(overrides, "label40472480")}
             ></Text>
             <Flex
               gap="8px"
@@ -174,7 +174,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493365")}
+              {...getOverrideProps(overrides, "link40472481")}
             >
               <Flex
                 gap="0"
@@ -188,7 +188,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493366")}
+                {...getOverrideProps(overrides, "icon40472482")}
               >
                 <MyIcon
                   width="18px"
@@ -202,7 +202,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="content"
-                  {...getOverrideProps(overrides, "MyIcon39493367")}
+                  {...getOverrideProps(overrides, "MyIcon40472483")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -225,7 +225,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Content"
-                {...getOverrideProps(overrides, "label39493368")}
+                {...getOverrideProps(overrides, "label40472484")}
               ></Text>
             </Flex>
             <Flex
@@ -238,7 +238,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493369")}
+              {...getOverrideProps(overrides, "link40472485")}
             >
               <Flex
                 gap="0"
@@ -252,7 +252,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493370")}
+                {...getOverrideProps(overrides, "icon40472486")}
               >
                 <MyIcon
                   width="18px"
@@ -266,7 +266,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="group"
-                  {...getOverrideProps(overrides, "MyIcon39493371")}
+                  {...getOverrideProps(overrides, "MyIcon40472487")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -289,7 +289,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Users"
-                {...getOverrideProps(overrides, "label39493372")}
+                {...getOverrideProps(overrides, "label40472488")}
               ></Text>
             </Flex>
             <Flex
@@ -302,7 +302,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493373")}
+              {...getOverrideProps(overrides, "link40472489")}
             >
               <Flex
                 gap="0"
@@ -316,7 +316,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493374")}
+                {...getOverrideProps(overrides, "icon40472490")}
               >
                 <MyIcon
                   width="18px"
@@ -330,7 +330,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="file"
-                  {...getOverrideProps(overrides, "MyIcon39493375")}
+                  {...getOverrideProps(overrides, "MyIcon40472491")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -353,7 +353,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Files"
-                {...getOverrideProps(overrides, "label39493376")}
+                {...getOverrideProps(overrides, "label40472492")}
               ></Text>
             </Flex>
           </Flex>
@@ -367,7 +367,7 @@ export default function SideBar(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Section39493377")}
+            {...getOverrideProps(overrides, "Section40472493")}
           >
             <Text
               fontFamily="Inter"
@@ -388,7 +388,7 @@ export default function SideBar(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Set up"
-              {...getOverrideProps(overrides, "label39493378")}
+              {...getOverrideProps(overrides, "label40472494")}
             ></Text>
             <Flex
               gap="8px"
@@ -400,7 +400,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493379")}
+              {...getOverrideProps(overrides, "link40472495")}
             >
               <Flex
                 gap="0"
@@ -414,7 +414,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493380")}
+                {...getOverrideProps(overrides, "icon40472496")}
               >
                 <MyIcon
                   width="18px"
@@ -428,7 +428,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="data"
-                  {...getOverrideProps(overrides, "MyIcon39493381")}
+                  {...getOverrideProps(overrides, "MyIcon40472497")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -451,7 +451,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Data"
-                {...getOverrideProps(overrides, "label39493382")}
+                {...getOverrideProps(overrides, "label40472498")}
               ></Text>
             </Flex>
             <Flex
@@ -464,7 +464,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493383")}
+              {...getOverrideProps(overrides, "link40472499")}
             >
               <Flex
                 gap="0"
@@ -478,7 +478,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493384")}
+                {...getOverrideProps(overrides, "icon40472500")}
               >
                 <MyIcon
                   width="18px"
@@ -492,7 +492,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="storage"
-                  {...getOverrideProps(overrides, "MyIcon39493385")}
+                  {...getOverrideProps(overrides, "MyIcon40472501")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -515,7 +515,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Storage"
-                {...getOverrideProps(overrides, "label39493386")}
+                {...getOverrideProps(overrides, "label40472502")}
               ></Text>
             </Flex>
             <Flex
@@ -528,7 +528,7 @@ export default function SideBar(props) {
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "link39493387")}
+              {...getOverrideProps(overrides, "link40472503")}
             >
               <Flex
                 gap="0"
@@ -542,7 +542,7 @@ export default function SideBar(props) {
                 borderRadius="4px"
                 padding="6px 6px 6px 6px"
                 backgroundColor="rgba(233,249,252,1)"
-                {...getOverrideProps(overrides, "icon39493388")}
+                {...getOverrideProps(overrides, "icon40472504")}
               >
                 <MyIcon
                   width="18px"
@@ -556,7 +556,7 @@ export default function SideBar(props) {
                   position="relative"
                   padding="0px 0px 0px 0px"
                   type="authentication"
-                  {...getOverrideProps(overrides, "MyIcon39493389")}
+                  {...getOverrideProps(overrides, "MyIcon40472505")}
                 ></MyIcon>
               </Flex>
               <Text
@@ -579,7 +579,7 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Authentication"
-                {...getOverrideProps(overrides, "label39493390")}
+                {...getOverrideProps(overrides, "label40472506")}
               ></Text>
             </Flex>
           </Flex>

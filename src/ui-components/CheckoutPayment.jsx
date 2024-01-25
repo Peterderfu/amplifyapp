@@ -7,14 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Button,
-  Divider,
-  Flex,
-  Image,
-  Text,
-  TextField,
-} from "@aws-amplify/ui-react";
+import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function CheckoutPayment(props) {
   const { overrides, ...rest } = props;
   return (
@@ -43,7 +36,7 @@ export default function CheckoutPayment(props) {
         position="relative"
         padding="32px 0px 32px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Frame 41139343305")}
+        {...getOverrideProps(overrides, "Frame 41140472374")}
       >
         <Flex
           gap="32px"
@@ -107,19 +100,11 @@ export default function CheckoutPayment(props) {
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 409")}
           >
-            <TextField
+            <Flex
               width="unset"
               height="unset"
-              label="Credit card number"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField39343313")}
-            ></TextField>
+              {...getOverrideProps(overrides, "TextField40472379")}
+            ></Flex>
             <Flex
               gap="24px"
               direction="row"
@@ -133,34 +118,16 @@ export default function CheckoutPayment(props) {
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "Frame 425")}
             >
-              <TextField
+              <Flex
                 width="unset"
                 height="unset"
-                label="Expiration"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField39343315")}
-              ></TextField>
-              <TextField
+                {...getOverrideProps(overrides, "TextField40472381")}
+              ></Flex>
+              <Flex
                 width="unset"
                 height="unset"
-                label="CVC"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField39343316")}
-              ></TextField>
+                {...getOverrideProps(overrides, "TextField40472382")}
+              ></Flex>
             </Flex>
           </Flex>
           <Flex
@@ -176,19 +143,11 @@ export default function CheckoutPayment(props) {
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 410")}
           >
-            <TextField
+            <Flex
               width="unset"
               height="unset"
-              label="Discount code"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField39343319")}
-            ></TextField>
+              {...getOverrideProps(overrides, "TextField40472384")}
+            ></Flex>
           </Flex>
           <Flex
             gap="24px"
@@ -201,19 +160,13 @@ export default function CheckoutPayment(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 32px 0px 32px"
-            {...getOverrideProps(overrides, "Frame 41139343321")}
+            {...getOverrideProps(overrides, "Frame 41140472385")}
           >
-            <Button
+            <Flex
               width="unset"
               height="unset"
-              shrink="0"
-              alignSelf="stretch"
-              size="large"
-              isDisabled={false}
-              variation="primary"
-              children="Purchase"
               {...getOverrideProps(overrides, "Button")}
-            ></Button>
+            ></Flex>
           </Flex>
         </Flex>
         <Flex
@@ -437,15 +390,11 @@ export default function CheckoutPayment(props) {
               {...getOverrideProps(overrides, "$26.80")}
             ></Text>
           </Flex>
-          <Divider
+          <View
             width="unset"
             height="1px"
-            shrink="0"
-            alignSelf="stretch"
-            size="small"
-            orientation="horizontal"
             {...getOverrideProps(overrides, "Divider")}
-          ></Divider>
+          ></View>
           <Flex
             gap="290px"
             direction="row"

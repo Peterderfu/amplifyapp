@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ButtonProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -21,7 +21,7 @@ export declare type DataRowOverridesProps = {
     DataRow?: PrimitiveOverrideProps<FlexProps>;
     label?: PrimitiveOverrideProps<TextProps>;
     value?: PrimitiveOverrideProps<TextProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type DataRowProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: DataRowOverridesProps | undefined | null;

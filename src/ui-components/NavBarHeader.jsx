@@ -52,7 +52,7 @@ export default function NavBarHeader(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767076")}
+        {...getOverrideProps(overrides, "Frame 32140472406")}
       >
         <Text
           fontFamily="Inter"
@@ -151,7 +151,7 @@ export default function NavBarHeader(props) {
         basis="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767081")}
+        {...getOverrideProps(overrides, "Frame 32140472411")}
       >
         <MyIcon
           width="24px"

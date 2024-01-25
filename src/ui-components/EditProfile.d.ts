@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import { MyIconProps } from "./MyIcon";
-import { ButtonProps, FlexProps, ImageProps, TextFieldProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -21,17 +21,17 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type EditProfileOverridesProps = {
     EditProfile?: PrimitiveOverrideProps<FlexProps>;
     Content?: PrimitiveOverrideProps<FlexProps>;
-    "Edit Profile29766913"?: PrimitiveOverrideProps<FlexProps>;
+    "Edit Profile40472228"?: PrimitiveOverrideProps<FlexProps>;
     MyIcon?: MyIconProps;
-    "Edit Profile29766916"?: PrimitiveOverrideProps<TextProps>;
+    "Edit Profile40472230"?: PrimitiveOverrideProps<TextProps>;
     Profile?: PrimitiveOverrideProps<FlexProps>;
     image?: PrimitiveOverrideProps<ImageProps>;
     "Upload New Image"?: PrimitiveOverrideProps<TextProps>;
     Forms?: PrimitiveOverrideProps<FlexProps>;
-    TextField29766922?: PrimitiveOverrideProps<TextFieldProps>;
-    TextField29766923?: PrimitiveOverrideProps<TextFieldProps>;
-    TextField29766924?: PrimitiveOverrideProps<TextFieldProps>;
-    Button?: PrimitiveOverrideProps<ButtonProps>;
+    TextField40472235?: PrimitiveOverrideProps<FlexProps>;
+    TextField40472236?: PrimitiveOverrideProps<FlexProps>;
+    TextField40472237?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type EditProfileProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: EditProfileOverridesProps | undefined | null;

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { BadgeProps, FlexProps, TextProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -22,7 +22,7 @@ export declare type StatOverridesProps = {
     Sales?: PrimitiveOverrideProps<TextProps>;
     "Frame 424"?: PrimitiveOverrideProps<FlexProps>;
     "8,260"?: PrimitiveOverrideProps<TextProps>;
-    Badge?: PrimitiveOverrideProps<BadgeProps>;
+    Badge?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
 export declare type StatProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: StatOverridesProps | undefined | null;

@@ -7,15 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Button,
-  Flex,
-  Image,
-  PhoneNumberField,
-  SelectField,
-  Text,
-  TextField,
-} from "@aws-amplify/ui-react";
+import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function FormCheckout(props) {
   const { overrides, ...rest } = props;
   return (
@@ -44,7 +36,7 @@ export default function FormCheckout(props) {
         position="relative"
         padding="32px 0px 32px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Frame 41129767005")}
+        {...getOverrideProps(overrides, "Frame 41140472353")}
       >
         <Flex
           gap="32px"
@@ -107,34 +99,16 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "Frame 426")}
             >
-              <TextField
+              <Flex
                 width="unset"
                 height="unset"
-                label="First name"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField29767009")}
-              ></TextField>
-              <TextField
+                {...getOverrideProps(overrides, "TextField40472358")}
+              ></Flex>
+              <Flex
                 width="unset"
                 height="unset"
-                label="Last name"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField29767010")}
-              ></TextField>
+                {...getOverrideProps(overrides, "TextField40472359")}
+              ></Flex>
             </Flex>
           </Flex>
           <Flex
@@ -150,19 +124,11 @@ export default function FormCheckout(props) {
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 409")}
           >
-            <TextField
+            <Flex
               width="unset"
               height="unset"
-              label="Street address"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767014")}
-            ></TextField>
+              {...getOverrideProps(overrides, "TextField40472361")}
+            ></Flex>
             <Flex
               gap="24px"
               direction="row"
@@ -176,46 +142,21 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               {...getOverrideProps(overrides, "Frame 425")}
             >
-              <TextField
+              <Flex
                 width="unset"
                 height="unset"
-                label="City"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField29767015")}
-              ></TextField>
-              <TextField
+                {...getOverrideProps(overrides, "TextField40472363")}
+              ></Flex>
+              <Flex
                 width="unset"
                 height="unset"
-                label="Zip code"
-                grow="1"
-                shrink="1"
-                basis="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
-                {...getOverrideProps(overrides, "TextField39343126")}
-              ></TextField>
-              <SelectField
+                {...getOverrideProps(overrides, "TextField40472364")}
+              ></Flex>
+              <Flex
                 width="100px"
                 height="unset"
-                label="State"
-                shrink="0"
-                placeholder=""
-                size="default"
-                isDisabled={false}
-                labelHidden={false}
-                variation="default"
                 {...getOverrideProps(overrides, "SelectField")}
-              ></SelectField>
+              ></Flex>
             </Flex>
           </Flex>
           <Flex
@@ -231,32 +172,16 @@ export default function FormCheckout(props) {
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 410")}
           >
-            <TextField
+            <Flex
               width="unset"
               height="unset"
-              label="Email address"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField39343134")}
-            ></TextField>
-            <PhoneNumberField
+              {...getOverrideProps(overrides, "TextField40472367")}
+            ></Flex>
+            <Flex
               width="unset"
               height="unset"
-              label="Phone number"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder=""
-              size="default"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
               {...getOverrideProps(overrides, "PhoneNumberField")}
-            ></PhoneNumberField>
+            ></Flex>
           </Flex>
           <Flex
             gap="24px"
@@ -269,19 +194,13 @@ export default function FormCheckout(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 32px 0px 32px"
-            {...getOverrideProps(overrides, "Frame 41139343187")}
+            {...getOverrideProps(overrides, "Frame 41140472369")}
           >
-            <Button
+            <Flex
               width="unset"
               height="unset"
-              shrink="0"
-              alignSelf="stretch"
-              size="large"
-              isDisabled={false}
-              variation="primary"
-              children="Continue to payment"
               {...getOverrideProps(overrides, "Button")}
-            ></Button>
+            ></Flex>
           </Flex>
         </Flex>
         <Image

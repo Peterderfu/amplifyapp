@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
+import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function ProfileCard(props) {
   const { overrides, ...rest } = props;
@@ -144,17 +144,11 @@ export default function ProfileCard(props) {
           {...getOverrideProps(overrides, "99 Followers")}
         ></Text>
       </Flex>
-      <Button
+      <Flex
         width="unset"
         height="unset"
-        shrink="0"
-        alignSelf="stretch"
-        size="large"
-        isDisabled={false}
-        variation="primary"
-        children="View Profile"
         {...getOverrideProps(overrides, "Button")}
-      ></Button>
+      ></Flex>
     </Flex>
   );
 }

@@ -7,14 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Button,
-  CheckboxField,
-  Flex,
-  Text,
-  TextAreaField,
-  TextField,
-} from "@aws-amplify/ui-react";
+import { Flex, Text } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function ContactUs(props) {
   const { overrides, ...rest } = props;
@@ -46,83 +39,37 @@ export default function ContactUs(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 428")}
       >
-        <TextField
+        <Flex
           width="unset"
           height="unset"
-          label="First name"
-          grow="1"
-          shrink="1"
-          basis="0"
-          placeholder=""
-          size="default"
-          isDisabled={false}
-          labelHidden={false}
-          variation="default"
-          {...getOverrideProps(overrides, "TextField29766936")}
-        ></TextField>
-        <TextField
+          {...getOverrideProps(overrides, "TextField40472242")}
+        ></Flex>
+        <Flex
           width="unset"
           height="unset"
-          label="Last name"
-          grow="1"
-          shrink="1"
-          basis="0"
-          placeholder=""
-          size="default"
-          isDisabled={false}
-          labelHidden={false}
-          variation="default"
-          {...getOverrideProps(overrides, "TextField29766938")}
-        ></TextField>
+          {...getOverrideProps(overrides, "TextField40472243")}
+        ></Flex>
       </Flex>
-      <TextField
+      <Flex
         width="unset"
         height="unset"
-        label="Email address"
-        shrink="0"
-        alignSelf="stretch"
-        placeholder=""
-        size="default"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        {...getOverrideProps(overrides, "TextField29766939")}
-      ></TextField>
-      <TextAreaField
+        {...getOverrideProps(overrides, "TextField40472244")}
+      ></Flex>
+      <Flex
         width="unset"
         height="unset"
-        label="Message"
-        shrink="0"
-        alignSelf="stretch"
-        placeholder=""
-        size="default"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
         {...getOverrideProps(overrides, "TextAreaField")}
-      ></TextAreaField>
-      <CheckboxField
+      ></Flex>
+      <Flex
         width="unset"
         height="unset"
-        label="You agree to our Privacy Policy"
-        shrink="0"
-        size="default"
-        defaultChecked={false}
-        isDisabled={false}
-        labelPosition="end"
         {...getOverrideProps(overrides, "CheckboxField")}
-      ></CheckboxField>
-      <Button
+      ></Flex>
+      <Flex
         width="unset"
         height="unset"
-        shrink="0"
-        alignSelf="stretch"
-        size="large"
-        isDisabled={false}
-        variation="primary"
-        children="Send message"
         {...getOverrideProps(overrides, "Button")}
-      ></Button>
+      ></Flex>
       <Flex
         gap="24px"
         direction="row"
@@ -134,7 +81,7 @@ export default function ContactUs(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 2829766941")}
+        {...getOverrideProps(overrides, "Frame 2840472248")}
       >
         <Flex
           gap="8px"
@@ -146,7 +93,7 @@ export default function ContactUs(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 2829766942")}
+          {...getOverrideProps(overrides, "Frame 2840472249")}
         >
           <MyIcon
             width="24px"
@@ -160,7 +107,7 @@ export default function ContactUs(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="instagram"
-            {...getOverrideProps(overrides, "MyIcon39193120")}
+            {...getOverrideProps(overrides, "MyIcon40472250")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -208,7 +155,7 @@ export default function ContactUs(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="twitter"
-            {...getOverrideProps(overrides, "MyIcon39193123")}
+            {...getOverrideProps(overrides, "MyIcon40472253")}
           ></MyIcon>
           <Text
             fontFamily="Inter"

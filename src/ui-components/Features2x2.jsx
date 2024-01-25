@@ -36,7 +36,7 @@ export default function Features2x2(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 13629766592")}
+        {...getOverrideProps(overrides, "Frame 13640471990")}
       >
         <Flex
           gap="24px"
@@ -49,7 +49,7 @@ export default function Features2x2(props) {
           alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 13629766593")}
+          {...getOverrideProps(overrides, "Frame 13640471991")}
         >
           <Flex
             gap="16px"
@@ -66,7 +66,7 @@ export default function Features2x2(props) {
             boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
             padding="40px 40px 40px 40px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Frame 37429766594")}
+            {...getOverrideProps(overrides, "Frame 37440471992")}
           >
             <Flex
               gap="0"
@@ -80,7 +80,7 @@ export default function Features2x2(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039424113")}
+              {...getOverrideProps(overrides, "Frame 43040471993")}
             >
               <MyIcon
                 width="24px"
@@ -94,7 +94,7 @@ export default function Features2x2(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39424114")}
+                {...getOverrideProps(overrides, "MyIcon40471994")}
               ></MyIcon>
             </Flex>
             <Text
@@ -142,7 +142,7 @@ export default function Features2x2(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.29766596"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.40471996"
               )}
             ></Text>
           </Flex>
@@ -161,7 +161,7 @@ export default function Features2x2(props) {
             boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
             padding="40px 40px 40px 40px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Frame 37329766597")}
+            {...getOverrideProps(overrides, "Frame 37340471997")}
           >
             <Flex
               gap="0"
@@ -175,7 +175,7 @@ export default function Features2x2(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039424116")}
+              {...getOverrideProps(overrides, "Frame 43040471998")}
             >
               <MyIcon
                 width="24px"
@@ -189,7 +189,7 @@ export default function Features2x2(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39424117")}
+                {...getOverrideProps(overrides, "MyIcon40471999")}
               ></MyIcon>
             </Flex>
             <Text
@@ -237,7 +237,7 @@ export default function Features2x2(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.29766599"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.40472001"
               )}
             ></Text>
           </Flex>
@@ -271,7 +271,7 @@ export default function Features2x2(props) {
             borderRadius="8px"
             padding="40px 40px 40px 40px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Frame 37429766601")}
+            {...getOverrideProps(overrides, "Frame 37440472003")}
           >
             <Flex
               gap="0"
@@ -285,7 +285,7 @@ export default function Features2x2(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039403233")}
+              {...getOverrideProps(overrides, "Frame 43040472004")}
             >
               <MyIcon
                 width="24px"
@@ -299,7 +299,7 @@ export default function Features2x2(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39403234")}
+                {...getOverrideProps(overrides, "MyIcon40472005")}
               ></MyIcon>
             </Flex>
             <Text
@@ -347,7 +347,7 @@ export default function Features2x2(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.29766603"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.40472007"
               )}
             ></Text>
           </Flex>
@@ -366,7 +366,7 @@ export default function Features2x2(props) {
             boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
             padding="40px 40px 40px 40px"
             backgroundColor="rgba(255,255,255,1)"
-            {...getOverrideProps(overrides, "Frame 37329766604")}
+            {...getOverrideProps(overrides, "Frame 37340472008")}
           >
             <Flex
               gap="0"
@@ -380,7 +380,7 @@ export default function Features2x2(props) {
               borderRadius="8px"
               padding="8px 8px 8px 8px"
               backgroundColor="rgba(233,249,252,1)"
-              {...getOverrideProps(overrides, "Frame 43039424110")}
+              {...getOverrideProps(overrides, "Frame 43040472009")}
             >
               <MyIcon
                 width="24px"
@@ -394,7 +394,7 @@ export default function Features2x2(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 type="checkmark"
-                {...getOverrideProps(overrides, "MyIcon39424111")}
+                {...getOverrideProps(overrides, "MyIcon40472010")}
               ></MyIcon>
             </Flex>
             <Text
@@ -442,7 +442,7 @@ export default function Features2x2(props) {
               children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
               {...getOverrideProps(
                 overrides,
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.29766606"
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.40472012"
               )}
             ></Text>
           </Flex>

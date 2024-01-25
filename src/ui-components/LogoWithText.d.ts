@@ -21,8 +21,8 @@ export declare type LogoWithTextOverridesProps = {
     LogoWithText?: PrimitiveOverrideProps<ViewProps>;
     logo?: PrimitiveOverrideProps<ViewProps>;
     Union?: PrimitiveOverrideProps<IconProps>;
-    Vector39193044?: PrimitiveOverrideProps<IconProps>;
-    Vector39193045?: PrimitiveOverrideProps<IconProps>;
+    Vector40472614?: PrimitiveOverrideProps<IconProps>;
+    Vector40472615?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type LogoWithTextProps = React.PropsWithChildren<Partial<ViewProps> & {
     color?: "brand" | "neutral";
