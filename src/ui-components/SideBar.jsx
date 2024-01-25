@@ -6,11 +6,16 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import MyIcon from "./MyIcon";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function SideBar(props) {
   const { overrides, ...rest } = props;
+  const labelFourZeroFourSevenTwoFourEightFourOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://www.google.com",
+  });
   return (
     <Flex
       gap="10px"
@@ -225,6 +230,9 @@ export default function SideBar(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="Content"
+                onClick={() => {
+                  labelFourZeroFourSevenTwoFourEightFourOnClick();
+                }}
                 {...getOverrideProps(overrides, "label40472484")}
               ></Text>
             </Flex>
