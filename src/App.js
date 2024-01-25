@@ -1,5 +1,8 @@
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
+import {ThemeProvider} from "@aws-amplify/ui-react";
+import studioTheme from './ui-components/studioTheme';
+
 import React, { useState, useEffect } from "react";
 import { Amplify } from 'aws-amplify';
 import { generateClient } from 'aws-amplify/api';
@@ -61,8 +64,12 @@ const App = ({ signOut }) => {
       variables: { input: { id } },
     });
   }
-
-  return (<ContactUs />);
+  return(
+  <ThemeProvider theme={studioTheme}>
+    <App />
+  </ThemeProvider>
+  );
+  // return (<ContactUs />);
 //   return (
 //     <View className="App">
 //       <Heading level={1}>My Todos App</Heading>
