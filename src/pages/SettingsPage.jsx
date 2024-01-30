@@ -1,24 +1,26 @@
 import { Flex, Text, Divider, Button, SwitchField, Link } from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
 import { get } from 'aws-amplify/api'
-async function getTodo() {
+// async function getTodo() {
+ function getTodo(){ 
   try {
     const restOperation = get({
       apiName: 'PAForwarder',
-      path: '/pa',
+      path: '/pa/1'
     });
 
-    const response = await restOperation.response;
+    // const { response } = await restOperation.response;
+    const { response } = restOperation.response;
 
     // console.log('POST call succeeded');
-    console.log('GET call succeeded: ', response);
-    return response
+    console.log('GET call succeeded: ', response.text());
+    return response;
   } catch (e) {
     console.log('GET call failed: ', e);
   }
 }
 export default function SettingsPage() {
-  // const resp = postTodo()
+  const resp = getTodo()
   return (
   <Flex
     gap="0"
@@ -88,7 +90,8 @@ export default function SettingsPage() {
             position="relative"
             whiteSpace="pre-wrap"
           >
-            This info is displayed on your public profile
+            {/* This info is displayed on your public profile */}
+            {resp}
           </Text>
         </Flex>
         <Divider
