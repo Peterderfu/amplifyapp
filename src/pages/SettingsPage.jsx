@@ -1,6 +1,24 @@
-import { Flex, Text, Divider, Button, SwitchField } from '@aws-amplify/ui-react';
+import { Flex, Text, Divider, Button, SwitchField, Link } from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
+import { get } from 'aws-amplify/api'
+async function getTodo() {
+  try {
+    const restOperation = get({
+      apiName: 'PAForwarder',
+      path: '/pa',
+    });
+
+    const response = await restOperation.response;
+
+    // console.log('POST call succeeded');
+    console.log('GET call succeeded: ', response);
+    return response
+  } catch (e) {
+    console.log('GET call failed: ', e);
+  }
+}
 export default function SettingsPage() {
+  // const resp = postTodo()
   return (
   <Flex
     gap="0"

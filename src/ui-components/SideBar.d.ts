@@ -57,6 +57,8 @@ export declare type SideBarOverridesProps = {
     label40472506?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type SideBarProps = React.PropsWithChildren<Partial<FlexProps> & {
+    link?: String;
+} & {
     overrides?: SideBarOverridesProps | undefined | null;
 }>;
 export default function SideBar(props: SideBarProps): React.ReactElement;

@@ -10,7 +10,7 @@ import { getOverrideProps, useNavigateAction } from "./utils";
 import MyIcon from "./MyIcon";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function SideBar(props) {
-  const { overrides, ...rest } = props;
+  const { link, overrides, ...rest } = props;
   const labelFourZeroFourSevenTwoFourEightFourOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
@@ -229,7 +229,7 @@ export default function SideBar(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Content"
+                children="Registered users"
                 onClick={() => {
                   labelFourZeroFourSevenTwoFourEightFourOnClick();
                 }}

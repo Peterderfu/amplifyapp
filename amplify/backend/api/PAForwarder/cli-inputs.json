@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/pa/{cmd}": {
+      "name": "/pa/{cmd}",
+      "lambdaFunction": "PAForwarder",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
