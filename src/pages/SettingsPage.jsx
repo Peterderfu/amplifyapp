@@ -1,26 +1,44 @@
 import { Flex, Text, Divider, Button, SwitchField, Link } from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
 import { get } from 'aws-amplify/api'
-// async function getTodo() {
- function getTodo(){ 
+import { useState } from 'react';
+import { Amplify } from 'aws-amplify'
+import { API } from 'aws-amplify'
+
+async function getTodo() {
   try {
     const restOperation = get({
       apiName: 'PAForwarder',
       path: '/pa/1'
     });
 
-    // const { response } = await restOperation.response;
-    const { response } = restOperation.response;
-
-    // console.log('POST call succeeded');
-    console.log('GET call succeeded: ', response.text());
-    return response;
+    const { body } = await restOperation.response;
+    // const response = await restOperation.response;
+    // const result = await response.json;
+    // console.log('GET call succeeded: ', response);
+    const result = await body.text();
+    console.log('GET call succeeded: ', result);
+    // return response_text;
+    return result;
   } catch (e) {
     console.log('GET call failed: ', e);
   }
+  
 }
+
+
 export default function SettingsPage() {
   const resp = getTodo()
+  
+  // print(response)
+  // const [response,setResponse] = useState("")
+  // const resp = getTodo()
+  // setResponse(resp)
+  // function getTodo(){
+  //   API.get('PAForwarder','/pa/1')
+  //     .then(result => {
+  //       setResponse(JSON.parse(result.body))})
+  // }
   return (
   <Flex
     gap="0"
@@ -76,7 +94,8 @@ export default function SettingsPage() {
             position="relative"
             whiteSpace="pre-wrap"
           >
-            Profile
+            {/* Profile */}
+            {resp}
           </Text>
           <Text
             fontFamily="Inter"
@@ -90,8 +109,7 @@ export default function SettingsPage() {
             position="relative"
             whiteSpace="pre-wrap"
           >
-            {/* This info is displayed on your public profile */}
-            {resp}
+            {/* <div>{response}</div> */}
           </Text>
         </Flex>
         <Divider
