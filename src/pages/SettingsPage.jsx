@@ -1,44 +1,39 @@
 import { Flex, Text, Divider, Button, SwitchField, Link } from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
 import { get } from 'aws-amplify/api'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Amplify } from 'aws-amplify'
 import { API } from 'aws-amplify'
+function DataFetcher(){
+  const [data,setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error,setError] = useState(null);
 
-async function getTodo() {
-  try {
-    const restOperation = get({
-      apiName: 'PAForwarder',
-      path: '/pa/1'
-    });
-
-    const { body } = await restOperation.response;
-    // const response = await restOperation.response;
-    // const result = await response.json;
-    // console.log('GET call succeeded: ', response);
-    const result = await body.text();
-    console.log('GET call succeeded: ', result);
-    // return response_text;
-    return result;
-  } catch (e) {
-    console.log('GET call failed: ', e);
-  }
-  
+  useEffect(()=>{
+    async function fetchData(){
+      try {
+        const restOperation = get({
+          apiName: 'PAForwarder',
+          path: '/pa/1'
+        });
+        const { body } = await restOperation.response;
+        const result = await body.json();
+        console.log('GET call succeeded: ', result);
+        setData(result);
+        setLoading(false);
+      } catch(error){
+        setError(error);
+        setLoading(false);
+      }
+    }
+    fetchData();
+    },[]);
+    return data
 }
 
-
 export default function SettingsPage() {
-  const resp = getTodo()
+  const resp = DataFetcher()
   
-  // print(response)
-  // const [response,setResponse] = useState("")
-  // const resp = getTodo()
-  // setResponse(resp)
-  // function getTodo(){
-  //   API.get('PAForwarder','/pa/1')
-  //     .then(result => {
-  //       setResponse(JSON.parse(result.body))})
-  // }
   return (
   <Flex
     gap="0"
