@@ -16,7 +16,6 @@ root.render(
   <StrictMode>
     <ThemeProvider theme={studioTheme}>
       <SettingsPage />
-      {/* <customerApp/> */}
     </ThemeProvider>
   </StrictMode>
 );

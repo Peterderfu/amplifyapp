@@ -14,7 +14,7 @@ function DataFetcher(){
       try {
         const restOperation = get({
           apiName: 'PAForwarder',
-          path: '/pa/1'
+          path: '/papy/1'
         });
         const { body } = await restOperation.response;
         const result = await body.json();

@@ -21,6 +21,10 @@
         "PAForwarder": {
           "deploymentBucketName": "amplify-amplifyapp-main-80105-deployment",
           "s3Key": "amplify-builds/PAForwarder-45644d33423167305542-build.zip"
+        },
+        "PAForwarderpy": {
+          "deploymentBucketName": "amplify-amplifyapp-main-80105-deployment",
+          "s3Key": "amplify-builds/PAForwarderpy-3978436f72666e6b745a-build.zip"
         }
       },
       "api": {

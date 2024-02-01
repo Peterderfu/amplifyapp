@@ -13,6 +13,19 @@
           "delete"
         ]
       }
+    },
+    "/papy/{cmd}": {
+      "name": "/papy/{cmd}",
+      "lambdaFunction": "PAForwarderpy",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }

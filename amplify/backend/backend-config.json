@@ -4,11 +4,19 @@
       "dependsOn": [
         {
           "attributes": [
-            "Name",
+            "Name",pip
             "Arn"
           ],
           "category": "function",
           "resourceName": "PAForwarder"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "PAForwarderpy"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -53,6 +61,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "PAForwarderpy": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -69,6 +82,22 @@
         {
           "category": "function",
           "resourceName": "PAForwarder"
+        }
+      ]
+    },
+    "AMPLIFY_function_PAForwarderpy_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "PAForwarderpy"
+        }
+      ]
+    },
+    "AMPLIFY_function_PAForwarderpy_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "PAForwarderpy"
         }
       ]
     }
