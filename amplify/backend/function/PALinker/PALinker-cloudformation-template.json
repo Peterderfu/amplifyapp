@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "PAForwarderpy",
+            "PALinker",
             {
               "Fn::Join": [
                 "",
                 [
-                  "PAForwarderpy",
+                  "PALinker",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amplifyappLambdaRole1245bffe",
+            "amplifyappLambdaRole546a86d4",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amplifyappLambdaRole1245bffe",
+                  "amplifyappLambdaRole546a86d4",
                   "-",
                   {
                     "Ref": "env"

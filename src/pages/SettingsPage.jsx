@@ -13,8 +13,8 @@ function DataFetcher(){
     async function fetchData(){
       try {
         const restOperation = get({
-          apiName: 'PAForwarder',
-          path: '/papy/1'
+          apiName: 'PAForwardv2',
+          path: '/items'
         });
         const { body } = await restOperation.response;
         const result = await body.json();

@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "PAForwarder": {
+    "PAForwardv2": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
@@ -25,7 +25,7 @@ export type AmplifyDependentResourcesAttributes = {
       "Name": "string",
       "Region": "string"
     },
-    "PAForwarderpy": {
+    "PALinker": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
