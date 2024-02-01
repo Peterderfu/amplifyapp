@@ -4,3 +4,14 @@ src.egg-info/PKG-INFO
 src.egg-info/SOURCES.txt
 src.egg-info/dependency_links.txt
 src.egg-info/top_level.txt
+ztDevice/ztDevice.py
+ztDevice/access/__init__.py
+ztDevice/access/certificateManagement.py
+ztDevice/access/configurationManagement.py
+ztDevice/access/identityServices.py
+ztDevice/access/policyObjects.py
+ztDevice/access/prismaAccess.py
+ztDevice/access/saseApi.py
+ztDevice/access/securityServices.py
+ztDevice/access/serviceSetup.py
+ztDevice/auth/saseAuthentication.py
