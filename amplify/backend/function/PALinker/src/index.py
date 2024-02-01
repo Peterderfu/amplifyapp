@@ -1,8 +1,8 @@
 import json
 from  ztDevice.ztDevice import getPrismaAccessConn,ListLocalUsers
 def handler(event, context):
-    # print('received event:')
-    # print(event)
+    print('received event:')
+    print(event)
     conn = getPrismaAccessConn()
     output = ListLocalUsers(conn)
     return {
