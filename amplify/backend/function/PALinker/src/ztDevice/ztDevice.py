@@ -1,5 +1,7 @@
 import sys,os,json
-sys.path.append(os.getcwd()) # add current path to system environment
+# sys.path.append(os.getcwd()) # add current path to system environment
+sys.path.append(os.path.dirname(__file__))
+
 import boto3
 from botocore.exceptions import ClientError
 from auth import saseAuthentication
