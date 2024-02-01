@@ -1,10 +1,10 @@
 import json
-from  ztDevice.ztDevice import getPrismaAccessConn,ListLocalUsers
+# from  ztDevice.ztDevice import getPrismaAccessConn,ListLocalUsers
 def handler(event, context):
     print('received event:')
     print(event)
-    conn = getPrismaAccessConn()
-    output = ListLocalUsers(conn)
+    # conn = getPrismaAccessConn()
+    # output = ListLocalUsers(conn)
     return {
         'statusCode': 200,
         'headers': {
