@@ -18,7 +18,8 @@ function DataFetcher(){
           path: '/prisma-app2-HelloWorldFunction-LGK3kT3fl4z0'
         });
         const { body } = await restOperation.response;
-        const result = await body.json();
+        const result = await body.text();
+        // JSON.parse(result);
         console.log('GET call succeeded: ', result);
         setData(result);
         setLoading(false);
@@ -34,7 +35,8 @@ function DataFetcher(){
 
 export default function SettingsPage() {
   const resp = DataFetcher()
-  
+  // const obj = JSON.parse(resp);
+  // console.log(obj);
   return (
   <Flex
     gap="0"
