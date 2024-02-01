@@ -4,7 +4,8 @@
       "dependsOn": [
         {
           "attributes": [
-            "Name",pip
+            "Name",
+            "pip",
             "Arn"
           ],
           "category": "function",
