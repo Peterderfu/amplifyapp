@@ -14,7 +14,8 @@ function DataFetcher(){
       try {
         const restOperation = get({
           apiName: 'PAForwardv2',
-          path: '/items'
+          // path: '/items'
+          path: '/prisma-app2-HelloWorldFunction-LGK3kT3fl4z0'
         });
         const { body } = await restOperation.response;
         const result = await body.json();

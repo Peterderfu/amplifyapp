@@ -1,5 +1,5 @@
-# import requests
-from botocore.vendored import requests
+import requests
+# from botocore.vendored import requests
 from datetime import datetime, timedelta
 import json
 
