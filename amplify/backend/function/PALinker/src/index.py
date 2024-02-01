@@ -1,3 +1,5 @@
+import sys,os
+sys.path.append(os.path.dirname(__file__))
 import json
 from  ztDevice.ztDevice import getPrismaAccessConn,ListLocalUsers
 def handler(event, context):
