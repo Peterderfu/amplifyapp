@@ -1,42 +1,10 @@
 import { Flex, Text, Divider, Button, SwitchField, Link } from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
-import { get } from 'aws-amplify/api'
-import { useState, useEffect } from 'react';
-import { Amplify } from 'aws-amplify'
-import { API } from 'aws-amplify'
-function DataFetcher(){
-  const [data,setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error,setError] = useState(null);
+import DataFetcher  from '../utils/DataFetcher';
 
-  useEffect(()=>{
-    async function fetchData(){
-      try {
-        const restOperation = get({
-          apiName: 'PAForwardv2',
-          // path: '/items'
-          path: '/prisma-app2-HelloWorldFunction-LGK3kT3fl4z0'
-        });
-        const { body } = await restOperation.response;
-        const result = await body.text();
-        // JSON.parse(result);
-        console.log('GET call succeeded: ', result);
-        setData(result);
-        setLoading(false);
-      } catch(error){
-        setError(error);
-        setLoading(false);
-      }
-    }
-    fetchData();
-    },[]);
-    return data
-}
 
 export default function SettingsPage() {
   const resp = DataFetcher()
-  // const obj = JSON.parse(resp);
-  // console.log(obj);
   return (
   <Flex
     gap="0"
