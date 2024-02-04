@@ -21,7 +21,6 @@ const BasicExample = () => {
     resp.then(resp => {
       const user_json = JSON.parse(resp);
       users = user_json.data;
-      console.log('Basic 1: ', users);
       setRows(parse(users.map(({ name, disabled, id }) => `<TableRow className=amplify-table__row><TableCell className=amplify-table__td>${name}</TableCell><TableCell className=amplify-table__td>${disabled ? "N" : "Y"}</TableCell><TableCell className=amplify-table__td>${id}</TableCell></TableRow>`).join('')));
     });
   }, []);
