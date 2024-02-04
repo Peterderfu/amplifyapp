@@ -24,6 +24,7 @@ def ListHipObjects(conn):
 ## List all local users
 def ListLocalUsers(conn):
     o = identityServices.identityServices(conn)
+    user_obj = o.paIdentidyListLocalUsers()
     return o.paIdentidyListLocalUsers()
 
 ## Lock local users
