@@ -4,7 +4,6 @@ import DataFetcher  from '../utils/DataFetcher';
 
 
 export default function SettingsPage() {
-  const resp = DataFetcher()
   return (
   <Flex
     gap="0"
@@ -60,8 +59,7 @@ export default function SettingsPage() {
             position="relative"
             whiteSpace="pre-wrap"
           >
-            {/* Profile */}
-            {resp}
+            Profile
           </Text>
           <Text
             fontFamily="Inter"

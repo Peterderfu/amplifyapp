@@ -4,7 +4,7 @@ import { ThemeProvider } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import './styles.css';
 import studioTheme from './ui-components/studioTheme';
-// import SettingsPage from './pages/SettingsPage';
+import SettingsPage from './pages/SettingsPage';
 import BasicExample from './pages/userPage';
 import { Amplify } from 'aws-amplify';
 import amplifyconfig from './amplifyconfiguration.json';

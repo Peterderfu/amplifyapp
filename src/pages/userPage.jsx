@@ -1,4 +1,4 @@
-import { Flex, Loader } from '@aws-amplify/ui-react';
+import { Flex ,Placeholder} from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
 // import { SideBar } from '../ui-components';
 import DataFetcher from '../utils/DataFetcher';
@@ -57,7 +57,7 @@ const BasicExample = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {loading?<Loader size="small" variation="linear" />:rows}
+          {loading?<Placeholder/>:rows}
           </TableBody>
         </Table>
       </Flex>
