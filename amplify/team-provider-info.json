@@ -20,11 +20,11 @@
         "amplifyapp09401f57": {},
         "PAForwarder": {
           "deploymentBucketName": "amplify-amplifyapp-main-80105-deployment",
-          "s3Key": "amplify-builds/PAForwarder-45644d33423167305542-build.zip"
+          "s3Key": "amplify-builds/PAForwarder-6f456943307353666947-build.zip"
         },
         "PALinker": {
           "deploymentBucketName": "amplify-amplifyapp-main-80105-deployment",
-          "s3Key": "amplify-builds/PALinker-7335462f72536e6e3043-build.zip"
+          "s3Key": "amplify-builds/PALinker-637a3255354a5857457a-build.zip"
         }
       },
       "api": {

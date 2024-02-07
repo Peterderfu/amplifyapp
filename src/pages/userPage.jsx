@@ -1,6 +1,5 @@
 import { Flex ,Placeholder} from '@aws-amplify/ui-react';
 import { NavBarHeader, SideBar } from '../ui-components';
-// import { SideBar } from '../ui-components';
 import DataFetcher from '../utils/DataFetcher';
 import { useState, useEffect } from 'react';
 import parse from 'html-react-parser';
@@ -13,7 +12,7 @@ import {
   TableRow,
 } from '@aws-amplify/ui-react';
 
-const BasicExample = () => {
+const RegisteredUsers = () => {
   let users = null;
   const [rows, setRows] = useState(null);
   const [loading,setLoading] = useState(true);
@@ -63,4 +62,4 @@ const BasicExample = () => {
       </Flex>
     </Flex>)
 };
-export default BasicExample;
+export default RegisteredUsers;
