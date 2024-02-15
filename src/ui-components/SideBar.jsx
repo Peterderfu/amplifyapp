@@ -224,7 +224,7 @@ export default function SideBar(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Registered users"
+                children="Content"
                 {...getOverrideProps(overrides, "label40472484")}
               ></Text>
             </Flex>

@@ -70,8 +70,7 @@ export default function SettingsPage() {
           position="relative"
         >
           <MySideBar />
-          <SideBar overrides={{ link40472481: { onClick: () => navigateToUserPage() } }} />
-          {/* <SideBar overrides={{ link40472481: { onMouseLeave: ()=> handleMouseLeave()}}}/> */}
+          {/* <SideBar overrides={{ link40472481: { onClick: () => navigateToUserPage() } }} /> */}
           <Flex
             gap="16px"
             direction="column"
@@ -93,32 +92,10 @@ export default function SettingsPage() {
               position="relative"
               padding="32px 0px 12px 0px"
             >
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="600"
-                color="rgba(13,26,38,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                shrink="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Profile
               </Text>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(92,102,112,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                shrink="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
               </Text>
             </Flex>
             <Divider
@@ -137,35 +114,10 @@ export default function SettingsPage() {
               alignSelf="stretch"
               position="relative"
             >
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(13,26,38,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                width="300px"
-                shrink="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Full name
               </Text>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(92,102,112,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                grow="1"
-                shrink="1"
-                basis="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Wesley Peck
               </Text>
               <Button
@@ -193,35 +145,10 @@ export default function SettingsPage() {
               alignSelf="stretch"
               position="relative"
             >
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(13,26,38,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                width="300px"
-                shrink="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Title
               </Text>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(92,102,112,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                grow="1"
-                shrink="1"
-                basis="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Product Manager
               </Text>
               <Button
@@ -249,35 +176,10 @@ export default function SettingsPage() {
               alignSelf="stretch"
               position="relative"
             >
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(13,26,38,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                width="300px"
-                shrink="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 Company
               </Text>
-              <Text
-                fontFamily="Inter"
-                fontSize="16px"
-                fontWeight="400"
-                color="rgba(92,102,112,1)"
-                lineHeight="16px"
-                textAlign="left"
-                display="block"
-                grow="1"
-                shrink="1"
-                basis="0"
-                position="relative"
-                whiteSpace="pre-wrap"
-              >
+              <Text>
                 AWS
               </Text>
               <Button
