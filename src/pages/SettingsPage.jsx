@@ -1,20 +1,18 @@
 import { Flex, Text, Divider, Button, SwitchField, Theme, ThemeProvider } from '@aws-amplify/ui-react';
 import { NavBarHeader } from '../ui-components';
-// import { MySideBar } from '../my-components/MySideBar';
 import { SideBar } from '../ui-components';
 import { useNavigate } from 'react-router-dom';
 import MySideBar from '../my-components/MySideBar';
-// import MySideBarText from '../my-components/MySideBarText;
 const theme: Theme = {
-  name: 'text-theme',
+  name: 'myTheme',
   tokens: {
     components: {
-      text: {
+      Text: {
         fontFamily: { value: "Inter" },
         fontSize: { value: "16px" },
         fontWeight: { value: "400" },
         color: { value: "rgba(4,125,149,1)" },
-        lineHeight: { value: "24px" },
+        lineHeight: { value: "4px" },
         textAlign: { value: "left" },
         display: { value: "block" },
         direction: { value: "column" },
@@ -28,6 +26,11 @@ const theme: Theme = {
         position: { value: "relative" },
         padding: { value: "0px 0px 0px 0px" },
         whiteSpace: { value: "pre-wrap" }
+      },
+      Table: {
+        data: {
+          borderStyle: { value: 'none' }
+        }
       },
     },
   },
