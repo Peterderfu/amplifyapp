@@ -13,6 +13,7 @@ export default function MySideBar() {
         <TableRow>
           <Link><TableCell>
             <Flex
+              id='userList'
               gap="0"
               direction="row">
               <Flex
