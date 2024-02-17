@@ -1,9 +1,7 @@
 import { Flex ,Placeholder} from '@aws-amplify/ui-react';
-import { NavBarHeader, SideBar } from '../ui-components';
 import DataFetcher from '../utils/DataFetcher';
 import { useState, useEffect } from 'react';
 import parse from 'html-react-parser';
-import MySideBar from '../my-components/MySideBar';
 import {
   Table,
   TableCell,
@@ -12,7 +10,7 @@ import {
   TableRow,
 } from '@aws-amplify/ui-react';
 
-const RegisteredUsers = () => {
+const UserList = () => {
   let users = null;
   const [rows, setRows] = useState(null);
   const [loading,setLoading] = useState(true);
@@ -36,7 +34,6 @@ const RegisteredUsers = () => {
       position="relative"
       backgroundColor="rgba(255,255,255,1)"
     >
-      <NavBarHeader />
       <Flex
         gap="0"
         direction="row"
@@ -46,8 +43,6 @@ const RegisteredUsers = () => {
         alignSelf="stretch"
         position="relative"
       >
-        {/* <MySideBar /> */}
-        <SideBar />
         <Table caption="Registered users" highlightOnHover={true} size="small">
           <TableHead>
             <TableRow>
@@ -63,4 +58,4 @@ const RegisteredUsers = () => {
       </Flex>
     </Flex>)
 };
-export default RegisteredUsers;
+export default UserList;

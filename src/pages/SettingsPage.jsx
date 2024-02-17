@@ -1,8 +1,6 @@
 import { Flex, Text, Divider, Button, SwitchField, Theme, ThemeProvider } from '@aws-amplify/ui-react';
 import { NavBarHeader } from '../ui-components';
-import { SideBar } from '../ui-components';
 import { useNavigate } from 'react-router-dom';
-import MySideBar from '../my-components/MySideBar';
 const theme: Theme = {
   name: 'myTheme',
   tokens: {
@@ -42,14 +40,6 @@ export default function SettingsPage() {
     navigate('/RegisteredUsers', { replace: true });
   }
 
-  const handleMouseEnter = (e) => {
-    e.target.style.color = "grey"
-    // e.target.style.cursor = "pointer"
-  }
-  const handleMouseLeave = (e) => {
-    e.target.style.color = "maroon"
-  }
-
   return (
     <ThemeProvider theme={theme} colorMode="light">
       <Flex
@@ -72,8 +62,6 @@ export default function SettingsPage() {
           alignSelf="stretch"
           position="relative"
         >
-          {/* <MySideBar/> */}
-          <SideBar overrides={{ link40472481: { onClick: () => navigateToUserPage() } }} />
           <Flex
             gap="16px"
             direction="column"

@@ -138,28 +138,45 @@
 // }
 // export default withAuthenticator(App);
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 // import './App.css';
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"
+import Layout from "./my-components/Layout";
+import UserList from "./pages/userList";
+import UserAdd from "./pages/userAdd";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='userList' element={<UserList />} />
+          <Route path='userAdd' element={<UserAdd />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
