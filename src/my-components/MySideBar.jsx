@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from '@aws-amplify/ui-react';
-// import { SideBar } from '../ui-components';
-// import {MySideBarText} from './MySideBarText';
-import MyIcon from "../ui-components/MyIcon";
+import { useNavigate } from 'react-router-dom';
+
+// import MyIcon from "../ui-components/MyIcon";
 import { Flex, Table, TableCell, TableRow, Text } from '@aws-amplify/ui-react';
 import { CgUserList, CgUserAdd } from "react-icons/cg";
 
+
 export default function MySideBar() {
+  const navigate = useNavigate();
+  const navigateToUserPage = () => {
+    // navigate('/RegisteredUsers', { replace: true });
+    navigate('/RegisteredUsers');
+  }
   return (
     <Flex direction="column">
       <Table size="Default" highlightOnHover={true}>
-        <TableRow>
+        <TableRow onClick={() => navigateToUserPage()}>
           <Link><TableCell>
             <Flex
               id='userList'

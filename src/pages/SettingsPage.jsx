@@ -72,8 +72,8 @@ export default function SettingsPage() {
           alignSelf="stretch"
           position="relative"
         >
-          <MySideBar onClick="javascript:navigateToUserPage()" />
-          {/* <SideBar overrides={{ link40472481: { onClick: () => navigateToUserPage() } }} /> */}
+          {/* <MySideBar/> */}
+          <SideBar overrides={{ link40472481: { onClick: () => navigateToUserPage() } }} />
           <Flex
             gap="16px"
             direction="column"

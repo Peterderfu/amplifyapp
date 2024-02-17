@@ -3,7 +3,7 @@ import { NavBarHeader, SideBar } from '../ui-components';
 import DataFetcher from '../utils/DataFetcher';
 import { useState, useEffect } from 'react';
 import parse from 'html-react-parser';
-
+import MySideBar from '../my-components/MySideBar';
 import {
   Table,
   TableCell,
@@ -46,6 +46,7 @@ const RegisteredUsers = () => {
         alignSelf="stretch"
         position="relative"
       >
+        {/* <MySideBar /> */}
         <SideBar />
         <Table caption="Registered users" highlightOnHover={true} size="small">
           <TableHead>

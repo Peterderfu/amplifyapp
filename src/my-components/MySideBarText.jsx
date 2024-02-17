@@ -1,18 +1,5 @@
 import React from 'react';
-
 import { Text ,Theme} from '@aws-amplify/ui-react';
-
-// const theme: Theme = {
-//     name: 'text-theme',
-//     tokens: {
-//       components: {
-//         text: {
-//           color: { value: 'rgba(4,125,149,1)' },
-
-//           },
-//         },
-//       },
-//     };
 
 export default function MySideBarText() {
     return (
