@@ -1,18 +1,18 @@
 import { AddUser, studioTheme } from '../ui-components';
 import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
 
-const updatedTheme = createTheme({
-  // Extend the theme to update the button color
-  name: "my-theme-updates",
-  tokens: {
-    components: {
-      div: {
-      // button:{
-        primary: {width: { value: "2000px" }}
-        // primary: {Color: { value: "#b71c1c" }}
-      },
-    },
-  }}, studioTheme)
+// const updatedTheme = createTheme({
+//   // Extend the theme to update the button color
+//   name: "my-theme-updates",
+//   tokens: {
+//     components: {
+//       div: {
+//       // button:{
+//         primary: {width: { value: "2000px" }}
+//         // primary: {Color: { value: "#b71c1c" }}
+//       },
+//     },
+//   }}, studioTheme)
 
 
 const UserAdd = () => {
@@ -20,7 +20,7 @@ const UserAdd = () => {
     // <div className="bg home">
     //   <h1>Add user</h1>
     // </div>
-    <ThemeProvider theme={updatedTheme}>
+    // <ThemeProvider theme={updatedTheme}>
       <AddUser 
       // onValidate={fields => {
       //   // User: (value,validationResponse) => {
@@ -39,9 +39,9 @@ const UserAdd = () => {
       //     };
       //   }
       // }
-        onSubmit={fields => { alert(fields['Field0']) }}
+        onSubmit={fields => { alert(fields['User']) }}
       />
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 };
 

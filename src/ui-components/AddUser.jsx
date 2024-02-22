@@ -147,7 +147,38 @@ export default function AddUser(props) {
         errorMessage={errors.OS?.errorMessage}
         hasError={errors.OS?.hasError}
         {...getOverrideProps(overrides, "OS")}
-      ></SelectField>
+      >
+        <option
+          children="Windows"
+          value="Windows"
+          {...getOverrideProps(overrides, "OSoption0")}
+        ></option>
+        <option
+          children="macOS"
+          value="macOS"
+          {...getOverrideProps(overrides, "OSoption1")}
+        ></option>
+        <option
+          children="Linux"
+          value="Linux"
+          {...getOverrideProps(overrides, "OSoption2")}
+        ></option>
+        <option
+          children="Android"
+          value="Android"
+          {...getOverrideProps(overrides, "OSoption3")}
+        ></option>
+        <option
+          children="iOS"
+          value="iOS"
+          {...getOverrideProps(overrides, "OSoption4")}
+        ></option>
+        <option
+          children="Chrome"
+          value="Chrome"
+          {...getOverrideProps(overrides, "OSoption5")}
+        ></option>
+      </SelectField>
       <TextField
         label={
           <span style={{ display: "inline-flex" }}>
