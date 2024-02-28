@@ -1,6 +1,6 @@
 import { AddUser, studioTheme } from '../ui-components';
 import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
-
+import doPOST from '../utils/DataFetcher';
 // const updatedTheme = createTheme({
 //   // Extend the theme to update the button color
 //   name: "my-theme-updates",
@@ -13,7 +13,13 @@ import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
 //       },
 //     },
 //   }}, studioTheme)
-
+const postUserDevice = (fields) =>{
+  event_post = {  
+                "operation": "register",
+                "payload": fields
+              }
+  
+}
 
 const UserAdd = () => {
   return (
@@ -39,7 +45,9 @@ const UserAdd = () => {
       //     };
       //   }
       // }
-        onSubmit={fields => { alert(fields['User']) }}
+      //Refer to https://docs.amplify.aws/react/build-ui/formbuilder/data-binding/
+        // onSubmit={fields => { alert(fields['User']) }}
+        onSubmit={fields => { postUserDevice(fields) }}
       />
     // </ThemeProvider>
   );
