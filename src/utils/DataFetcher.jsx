@@ -26,8 +26,8 @@ export async function doPOST(fields) {
       apiName: API_NAME,
       path: PATH_POST,
       // options: {
-        // body: {"operation":"register","payload":fields}
-        body: {operation:"register",payload:fields}
+      body: {"operation":"register","payload":fields}
+        // body: {operation:"register",payload:fields}
       // }
     });
     const { body } = await restOperation.response;
