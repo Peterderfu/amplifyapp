@@ -4,7 +4,8 @@ const PATH_GET = '/prisma-app2-HelloWorldFunction-LGK3kT3fl4z0'
 const PATH_POST = '/api'
 // async function DataFetcher(){
 export async function doGet() {
-  let result = ''
+  let result = '' 
+  
   try {
     const restOperation = get({
       apiName: API_NAME,
