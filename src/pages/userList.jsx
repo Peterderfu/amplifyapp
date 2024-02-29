@@ -1,5 +1,7 @@
 import { Flex ,Placeholder} from '@aws-amplify/ui-react';
-import DataFetcher from '../utils/DataFetcher';
+// import DataFetcher from '../utils/DataFetcher';
+import {doGet} from '../utils/DataFetcher';
+
 import { useState, useEffect } from 'react';
 import parse from 'html-react-parser';
 import {
@@ -15,7 +17,7 @@ const UserList = () => {
   const [rows, setRows] = useState(null);
   const [loading,setLoading] = useState(true);
   useEffect(() => {
-    const resp = DataFetcher();
+    const resp = doGet();
     resp.then(resp => {
       const user_json = JSON.parse(resp);
       users = user_json.data;

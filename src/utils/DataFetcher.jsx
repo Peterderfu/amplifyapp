@@ -1,8 +1,9 @@
 import { get,put } from 'aws-amplify/api'
 const API_NAME = 'PAForwardv2'
 const PATH_GET = '/prisma-app2-HelloWorldFunction-LGK3kT3fl4z0'
+const PATH_POST = '/api'
 // async function DataFetcher(){
-async function doGet() {
+export async function doGet() {
   let result = ''
   try {
     const restOperation = get({
@@ -17,12 +18,12 @@ async function doGet() {
   }
   return result;
 };
-async function doPOST(fields) {
+export async function doPOST(fields) {
   let result = ''
   try {
     const restOperation = put({
       apiName: API_NAME,
-      path: API_NAME,
+      path: PATH_POST,
       options: {
         body: {"operation":"register","payload":fields}
       }
@@ -35,4 +36,4 @@ async function doPOST(fields) {
   }
   return result;
 }
-export default doGet;
+// export default doGet;

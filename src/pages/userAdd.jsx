@@ -1,6 +1,6 @@
 import { AddUser, studioTheme } from '../ui-components';
 import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
-import doPOST from '../utils/DataFetcher';
+import {doPOST} from '../utils/DataFetcher';
 // const updatedTheme = createTheme({
 //   // Extend the theme to update the button color
 //   name: "my-theme-updates",
@@ -14,11 +14,11 @@ import doPOST from '../utils/DataFetcher';
 //     },
 //   }}, studioTheme)
 const postUserDevice = (fields) =>{
-  event_post = {  
-                "operation": "register",
-                "payload": fields
-              }
-  
+  // event_post = {  
+  //               "operation": "register",
+  //               "payload": fields
+  //             }
+  doPOST(fields)
 }
 
 const UserAdd = () => {
