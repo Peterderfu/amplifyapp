@@ -93,12 +93,7 @@ export default function AddUser(props) {
       {...rest}
     >
       <TextField
-        label={
-          <span style={{ display: "inline-flex" }}>
-            <span>User</span>
-            <span style={{ color: "red" }}>*</span>
-          </span>
-        }
+        label="User"
         isRequired={true}
         placeholder="Add user name here"
         value={User}
@@ -124,7 +119,15 @@ export default function AddUser(props) {
         {...getOverrideProps(overrides, "User")}
       ></TextField>
       <SelectField
-        label="OS"
+        label={
+          <span style={{ display: "inline-flex" }}>
+            <span>OS</span>
+            <span style={{ whiteSpace: "pre", fontStyle: "italic" }}>
+              {" "}
+              - optional
+            </span>
+          </span>
+        }
         placeholder="Please select an OS type"
         value={OS}
         onChange={(e) => {
@@ -180,12 +183,7 @@ export default function AddUser(props) {
         ></option>
       </SelectField>
       <TextField
-        label={
-          <span style={{ display: "inline-flex" }}>
-            <span>Device ID</span>
-            <span style={{ color: "red" }}>*</span>
-          </span>
-        }
+        label="Device ID"
         isRequired={true}
         placeholder="Add device ID here"
         value={Device}

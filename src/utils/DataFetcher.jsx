@@ -37,9 +37,15 @@ export async function DoPOST(fields) {
   } catch (error) {
 
   }
-  
-  // navigate('/userList', { replace: true });
-  // console.log("DoPOST")
   return result;
 }
-// export default doGet;
+
+export async function PostUserDevice (fields){
+  let result = ""
+  result = DoPOST(fields)
+  return result
+
+
+}
+
+

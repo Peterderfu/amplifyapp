@@ -45,3 +45,6 @@ amplifytools.xcconfig
 **.sample
 #amplify-do-not-edit-end
 amplify/backend/function/PALinker/src/ztDevice/auth/__pycache__/saseAuthentication.cpython-310.pyc
+data/test.csv
+package-lock.json
+package.json

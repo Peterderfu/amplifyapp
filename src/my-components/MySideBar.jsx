@@ -9,6 +9,8 @@ export default function MySideBar() {
   const navigate = useNavigate();
   const navigateToUserList = () => {navigate('/userList');}
   const navigateToUserAdd = () => {navigate('/userAdd');}
+  const navigateToBatchUserAdd = () => {navigate('/batchUserAdd');}
+  
 
   return (
     <Flex direction="column">
@@ -58,7 +60,28 @@ export default function MySideBar() {
               </Flex>
               <Text>Add Users</Text></Flex></TableCell></Link>
         </TableRow>
-
+        <TableRow onClick={() => navigateToBatchUserAdd()}>
+          <Link><TableCell>
+            <Flex
+              gap="0"
+              direction="row">
+              <Flex
+                gap="0"
+                direction="row"
+                width="unset"
+                height="unset"
+                justifyContent="flex-start"
+                alignItems="flex-start"
+                shrink="0"
+                position="relative"
+                borderRadius="4px"
+                padding="6px 6px 6px 6px"
+                backgroundColor="rgba(233,249,252,1)"
+              >
+                <CgUserAdd />
+              </Flex>
+              <Text>Batch Add Users</Text></Flex></TableCell></Link>
+        </TableRow>
       </Table>
     </Flex>
   )

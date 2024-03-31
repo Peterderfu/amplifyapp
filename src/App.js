@@ -166,6 +166,8 @@ import Home from "./pages/Home"
 import Layout from "./my-components/Layout";
 import UserList from "./pages/userList";
 import UserAdd from "./pages/userAdd";
+import BatchUserAdd from "./pages/batchUserAddPage"
+
 function App() {
   return (
     <BrowserRouter>
@@ -174,6 +176,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path='userList' element={<UserList />} />
           <Route path='userAdd' element={<UserAdd />} />
+          <Route path='batchUserAdd' element={<BatchUserAdd />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
