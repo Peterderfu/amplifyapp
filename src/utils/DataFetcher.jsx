@@ -20,14 +20,31 @@ export async function doGet() {
   return result;
 };
 export async function DoPOST(fields) {
+    // JSON example
+    // {
+    //   "payload": {
+    //     "reg": [
+    //       {
+    //         "User": "user02",
+    //         "OS": "Windows",
+    //         "Device": "123456"
+    //       },
+    //       {
+    //         "User": "user03",
+    //         "OS": "Linux",
+    //         "Device": "987654321"
+    //       }
+    //     ]
+    //   },
+    //   "operation": "register"
+    // }
   let result = ''
- 
   try {
     const restOperation = post({
       apiName: API_NAME,
       path: PATH_POST,
       options: {
-      body: {"operation":"register","payload":fields}
+        body: {"operation":"register","payload":fields}
       }
     });
     const { body } = await restOperation.response;

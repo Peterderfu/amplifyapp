@@ -19,7 +19,6 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const BatchUserAdd = () => {
   // const [rows, setRows] = useState(null);
   const [parsedData, setParsedData] = useState([]);
-
   //State to store table Column name
   const [tableRows, setTableRows] = useState([]);
   //State to store the values
@@ -50,17 +49,14 @@ const BatchUserAdd = () => {
     });
   };
   const SubmitMultiUsers = (event) => {
-    let jsonObject = {};
+    
+    let jsonObject = [];
+    let postData = {};
     values.map((value, index) => {
-      // jsonObject['User']    = value[0]
-      // jsonObject['OS']      = value[1]
-      // jsonObject['Device']  = value[2]
-      // jsonObject = [...jsonObject,{'User':value[0],'OS':value[1],'Device':value[2]}]
-      jsonObject[index] = {'User':value[0],'OS':value[1],'Device':value[2]}
-      
+      jsonObject.push({'User':value[0],'OS':value[1],'Device':value[2]})
     });
-    PostUserDevice(jsonObject)
-    console.log(jsonObject)
+    postData['reg'] = JSON.parse(JSON.stringify(jsonObject))
+    PostUserDevice(postData)
   };
   return (
     <div>

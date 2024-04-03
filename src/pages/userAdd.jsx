@@ -6,7 +6,6 @@ import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
 import {DoPOST} from '../utils/DataFetcher';
 
 async function PostUserDevice (fields){
-  // const PostUserDevice = (fields) =>{
   let result = ""
   result = DoPOST(fields)
   return result
