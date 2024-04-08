@@ -10,18 +10,36 @@ import {
   TableBody,
   TableHead,
   TableRow,
+  SwitchField,
+  Button
 } from '@aws-amplify/ui-react';
 
 const UserList = () => {
   let users = null;
   const [rows, setRows] = useState(null);
   const [loading,setLoading] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
+
   useEffect(() => {
     const resp = doGet();
     resp.then(resp => {
       const user_json = JSON.parse(resp);
       users = user_json.data;
-      setRows(parse(users.map(({ name, disabled, id }) => `<TableRow className=amplify-table__row><TableCell className=amplify-table__td>${name}</TableCell><TableCell className=amplify-table__td>${disabled ? "N" : "Y"}</TableCell><TableCell className=amplify-table__td>${id}</TableCell></TableRow>`).join('')));
+      // setRows(parse(users.map(({ name, disabled, id }) => `<TableRow className=amplify-table__row><TableCell className=amplify-table__td>${name}</TableCell><TableCell className=amplify-table__td>${disabled ? "N" : "Y"}</TableCell><TableCell className=amplify-table__td>${id}</TableCell></TableRow>`).join('')));
+      setRows(
+          users.map(
+            ({ name, disabled, id }) => <TableRow className='amplify-table__row'>
+                                            <TableCell className='amplify-table__td'>{name}</TableCell>
+                                            <TableCell className='amplify-table__td'>
+                                              <SwitchField label='Enable'
+                                                          //  isChecked={isChecked}
+                                                           defaultChecked={!disabled} 
+                                                           onChange={(e) => {setIsChecked(e.target.checked);}}/>
+                                            </TableCell>
+                                            <TableCell className='amplify-table__td'>{id}</TableCell>
+                                        </TableRow>
+            )
+        );
       setLoading(false)
     });
   }, []);
