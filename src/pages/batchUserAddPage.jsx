@@ -15,7 +15,7 @@ import {
 import { useState, useEffect } from 'react';
 import Papa from "papaparse";
 import {PostUserDevice} from '../utils/DataFetcher';
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+// const sleep = ms => new Promise(r => setTimeout(r, ms));
 const BatchUserAdd = () => {
   // const [rows, setRows] = useState(null);
   const [parsedData, setParsedData] = useState([]);

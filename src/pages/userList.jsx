@@ -1,9 +1,8 @@
-import { Flex ,Placeholder} from '@aws-amplify/ui-react';
-// import DataFetcher from '../utils/DataFetcher';
-import {doGet} from '../utils/DataFetcher';
+import { Collection, Flex ,Placeholder} from '@aws-amplify/ui-react';
+import {doGet,PutUserDevice} from '../utils/DataFetcher';
 
 import { useState, useEffect } from 'react';
-import parse from 'html-react-parser';
+// import parse from 'html-react-parser';
 import {
   Table,
   TableCell,
@@ -13,12 +12,31 @@ import {
   SwitchField,
   Button
 } from '@aws-amplify/ui-react';
-
+// const SubmitMultiUsers = (event) => {
+//   let jsonObject = [];
+//   let postData = {};
+//   values.map((value, index) => {
+//     jsonObject.push({'User':value[0],'OS':value[1],'Device':value[2]})
+//   });
+//   postData['reg'] = JSON.parse(JSON.stringify(jsonObject))
+//   PostUserDevice(postData)
+// };
+const updateEnablity = (event) => {
+  let jsonObject = [];
+  let putData = {};
+  const collection = document.getElementsByName("Enable")
+  for (let i = 0; i < collection.length; i++) {
+    jsonObject.push({'id':collection[i].id,'name':collection[i].testId,'disabled':!collection[i].checked})
+  }
+  putData['reg'] = JSON.parse(JSON.stringify(jsonObject))
+  PutUserDevice(putData)
+}
 const UserList = () => {
   let users = null;
   const [rows, setRows] = useState(null);
   const [loading,setLoading] = useState(true);
   const [isChecked, setIsChecked] = useState(false);
+  const [enablity,setEnablity] = useState({});
 
   useEffect(() => {
     const resp = doGet();
@@ -31,16 +49,16 @@ const UserList = () => {
             ({ name, disabled, id }) => <TableRow className='amplify-table__row'>
                                             <TableCell className='amplify-table__td'>{name}</TableCell>
                                             <TableCell className='amplify-table__td'>
-                                              <SwitchField label='Enable'
-                                                          //  isChecked={isChecked}
+                                              <SwitchField label='Enable' id={id} name='Enable' testId={name}
                                                            defaultChecked={!disabled} 
-                                                           onChange={(e) => {setIsChecked(e.target.checked);}}/>
+                                                           onChange={(e) => {setIsChecked(e.target.checked);
+                                                                             setEnablity({[`${id}`]:e.target.checked})}}/>
                                             </TableCell>
                                             <TableCell className='amplify-table__td'>{id}</TableCell>
                                         </TableRow>
             )
         );
-      setLoading(false)
+      setLoading(false);
     });
   }, []);
   return (
@@ -75,7 +93,7 @@ const UserList = () => {
           {loading?<Placeholder/>:rows}
           </TableBody>
         </Table>
-      </Flex>
+      </Flex><Button onClick={()=>updateEnablity()}>Submit</Button>
     </Flex>)
 };
 export default UserList;
